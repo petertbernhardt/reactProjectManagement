@@ -1,5 +1,9 @@
 import React from 'react';
 
-const View = () => <h1>View a Project</h1>;
+const View = () => (
+	<div className="container">
+		<h1>View a Project</h1>
+	</div>
+);
 
 export default View
