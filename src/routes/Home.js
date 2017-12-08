@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => (
 	<div className="container">
@@ -7,25 +8,43 @@ const Home = () => (
 			<div className="col-md-4 col-sm-6 col-xs-12">
 				<h3>Projects</h3>
 				<ul className="list">
-					<li>Go to Mars</li>
-					<li>World Peace</li>
-					<li>Half Life 3</li>
+					<li>
+        				<Link to={'/projects/1'} activeClassName="active">Go to Mars</Link>
+					</li>
+					<li>
+        				<Link to={'/projects/2'} activeClassName="active">World Peace</Link>
+    				</li>
+					<li>
+        				<Link to={'/projects/3'} activeClassName="active">Half Life 3</Link>
+    				</li>
 				</ul>
 			</div>
 			<div className="col-md-4 col-sm-6 col-xs-12">
 				<h3>Managers</h3>
 				<ul className="list">
-					<li>Elon Musk</li>
-					<li>Gabe Newell</li>
-					<li>Emperor of Mankind</li>
+					<li>
+        				<Link to={'/managers/1'} activeClassName="active">Elon Musk</Link>
+        			</li>
+					<li>
+        				<Link to={'/managers/2'} activeClassName="active">Gabe Newell</Link>
+        			</li>
+					<li>
+        				<Link to={'/managers/3'} activeClassName="active">Emperor of Mankind</Link>
+        			</li>
 				</ul>
 			</div>
 			<div className="col-md-4 col-sm-6 col-xs-12">
 				<h3>Workers</h3>
 				<ul className="list">
-					<li>Bob</li>
-					<li>Scully</li>
-					<li>Hitchcock</li>
+					<li>
+        				<Link to={'/workers/1'} activeClassName="active">Bob</Link>
+    				</li>
+					<li>
+        				<Link to={'/workers/2'} activeClassName="active">Scully</Link>
+        			</li>
+					<li>
+        				<Link to={'/workers/3'} activeClassName="active">Hitchcock</Link>
+        			</li>
 				</ul>
 			</div>
 		</div>
